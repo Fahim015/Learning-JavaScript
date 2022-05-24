@@ -9,7 +9,7 @@ console.log(15 + 30 - 10);*/
 
 
 
-// String and template literals
+// ----String and template literals----//
 
 
 /*const firstName = 'Ahmad';
@@ -29,7 +29,7 @@ line
 string`)*/
 
 
-// If else statement//
+// ----If else statement----//
 
 
 /*const age = 15;
@@ -52,3 +52,26 @@ if(birthYear <= 2000) {
     century = 21;
 }
 console.log(century);*/
+
+/*
+
+
+// ----Equality operators----//
+
+const favorite =  Number (prompt("what is your favorite number?"));
+
+if(favorite === 7) {
+    console.log('cool 7 is amazing');
+} else if(favorite === 15) {
+    console.log('15 is also amazing');
+} else if(favorite === 20) {
+    console.log('20 is also amazing');
+} else {
+    console.log('oop! you chose wrong number');
+}*/
+
+
+
+// ----Boolean operators----//
+
+

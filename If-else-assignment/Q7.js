@@ -5,7 +5,7 @@ Then it check that whether the number is greater than, less than or equal to 50?
 
 const number =  prompt('Enter number between 1 to 100');
 
-
+if(number>0 && number<=100){
 if(number>50) {
     console.log(`${number} Number is greater then 50`);
 } else if(number<50) {
@@ -13,3 +13,7 @@ if(number>50) {
 } else if (number===('50')) {
 console.log(`${number} Number is Equal to 50`);
 } 
+}
+else{
+    console.log(`Enter Valid Number 1---100`)
+}

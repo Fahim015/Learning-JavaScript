@@ -10,4 +10,4 @@ for(i=1; i<total_Values; i++){
         smallest=temp
     }
     }
-    console.log(`Min Integer is: ${smallest}`);
+    console.log(`Smallest Integer is: ${smallest}`);

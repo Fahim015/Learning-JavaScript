@@ -10,14 +10,21 @@ while(n!=6001 && n!==0 ){
     
     if(n>=6001){
         console.log(alert(`You cross The limit of [6000]`));
-    }else if(n<=0){
-        console.log(alert(`[0] is Used To end the loop`));   
-    }else if(n<10){
-        console.log(alert(`Your number is below The limit of [10]`));} 
-    else if(n){
-            
-            let div = (n/9);
-            console.log(`Divisible by 9 answer is: [${div}]`);
+    } else if(n===0){
+        console.log(`[0] is Used To end the loop`);
+    }  else if(n<10){
+        console.log(`Your number is below The limit of [10]`);
+    } 
+        if(n%9===0){
+        console.log(`completely divisible by 9:`);
+    
         }
+        else if(n%2===0){
+            even = n;
+            console.log(`${even}: is Even Number `);
+        }else{
+            odd = n;
+            console.log(`${odd}: is Odd Number `);
+        }
+        
 }
-

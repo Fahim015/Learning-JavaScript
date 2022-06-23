@@ -14,9 +14,12 @@ let sum = 0;
     let average = (sum/totalNumber);
     console.log(` New Number is : ${n} 
                   Total Number is : ${totalNumber}
-                  Sum is : ${sum} 
-                  Average is : [${average}]`);
-    
+                  Sum is : ${sum} `);
+                  
+        if(n==-1){
+            console.log(`Average is : [${average}]`);
+        }          
     }
+    
 
 

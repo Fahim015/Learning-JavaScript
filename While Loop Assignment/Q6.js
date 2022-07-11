@@ -1,36 +1,28 @@
 /*Write a program that reads unsigned numbers in the range 10-60000 continually until zero is entered. Find and display how many numbers are completely divisible by 9, odd and even. Use while loop statement?*/
 
-
-let n = 10;
-let count = 0;
-while(n!=6001 && n!==0 ){
-    let temp = Number(prompt('enter a number'));
-    n = Number(temp);
+let n = Number(prompt('enter a number'));
+let countEven = 0; 
+let countOdd = 0;
+let countDiv  = 0;
+let even=n, odd=n, divisible=n;
+while( n>9 && n<=60000 && n!=0 ){
+    
     console.log(`You Entered Number is: ${n}`);
     
-    
-    if(n>=6001){
-        console.log(alert(`You cross The limit of [6000]`));
-    } else if(n===0){
-        console.log(`[0] is Used To end the loop`);
-    }  else if(n<10){
-        console.log(`Your number is below The limit of [10]`);
-    } 
         if(n%9===0){
-        console.log(`completely divisible by 9:`);
-        mod = (n%9==0)
-        count = count + mod;
-    
+            divisible=n;
+        countDiv = countDiv + 1;
         }
         else if(n%2===0){
-            even = n;
-            console.log(`${even}: is Even Number `);
+            even=n;
+            countEven = countEven+1;
         }else{
-            odd = n;
-            console.log(`${odd}: is Odd Number `);
+            odd=n;
+            countOdd = countOdd + 1;
         }
-        
+        n = Number(prompt('enter a number'));
 } 
-
-console.log(`Total [${count}] : numbers  Who are completely divisible by 9`);
+console.log(`[${countOdd}] Numbers is Odd `);
+console.log(`[${countEven}] Numbers is Even`);
+console.log(`Total [${countDiv}] numbers  Who are completely divisible by 9`);
 
